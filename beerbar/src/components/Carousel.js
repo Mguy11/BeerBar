@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import headerImage from '../images/Beerbar-Header.jpg'
+
+import BarImage1 from '../images/bar-1.jpg'
+import BarImage2 from '../images/bar-2.jpg'
+import BarImage3 from '../images/bar-3.jpg'
+
+
 class ControlledCarousel extends React.Component {
     constructor(props, context) {
       super(props, context);
@@ -28,11 +33,12 @@ class ControlledCarousel extends React.Component {
           activeIndex={index}
           direction={direction}
           onSelect={this.handleSelect}
+          className="image-carousel"
         >
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src={headerImage}
+              className="image"
+              src={BarImage1}
               alt="First slide"
             />
             <Carousel.Caption>
@@ -42,8 +48,8 @@ class ControlledCarousel extends React.Component {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src={headerImage}
+              className="image"
+              src={BarImage2}
               alt="Third slide"
             />
   
@@ -54,8 +60,8 @@ class ControlledCarousel extends React.Component {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src={headerImage}
+              className="image"
+              src={BarImage3}
               alt="Third slide"
             />
   

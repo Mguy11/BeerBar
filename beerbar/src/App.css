@@ -3,10 +3,23 @@
   overflow: hidden;
 }
 
-.about-body {
-
-}
-
 .about h2 {
   text-align: center;
 }
+
+
+
+.menu {
+  background: #fff;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 8em;
+  color: #000;
+}
+
+.menu hr {
+  border: 1px solid #168B81;
+}
+

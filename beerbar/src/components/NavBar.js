@@ -10,7 +10,7 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <Navbar bg="dark" variant="dark" sticky="top">
+            <Navbar bg="light" variant="light" sticky="top">
                 <Navbar.Brand href="#home">BeerBar</Navbar.Brand>
                 <Nav className="mr-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
