@@ -38,7 +38,7 @@ class ControlledCarousel extends React.Component {
           <Carousel.Item>
             <img
               className="image"
-              src={BarImage1}
+              src={BarImage2}
               alt="First slide"
             />
             <Carousel.Caption>
@@ -61,7 +61,7 @@ class ControlledCarousel extends React.Component {
           <Carousel.Item>
             <img
               className="image"
-              src={BarImage3}
+              src={BarImage2}
               alt="Third slide"
             />
   

@@ -24,9 +24,7 @@ export default class NavBar extends Component {
                     </Col>
                     </Row>
                 </Container>
- 
-
-                <ControlledCarousel />
+              <ControlledCarousel />
             </div>
         );
     }

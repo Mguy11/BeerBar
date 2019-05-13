@@ -13,9 +13,10 @@ export default class NavBar extends Component {
             <Navbar bg="light" variant="light" sticky="top">
                 <Navbar.Brand href="#home">BeerBar</Navbar.Brand>
                 <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                <Nav.Link href="#About">About</Nav.Link>
+                <Nav.Link href="#Menu">Menu</Nav.Link>
+                <Nav.Link href="#Maps">Maps</Nav.Link>
+                <Nav.Link href="#Contact">Contact</Nav.Link>
                 </Nav>
                 <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
