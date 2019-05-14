@@ -3,11 +3,16 @@
   overflow: hidden;
 }
 
+.about {
+  height: 80vh;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .about h2 {
   text-align: center;
 }
-
-
 
 .menu {
   background: #fff;
@@ -23,3 +28,9 @@
   border: 1px solid #168B81;
 }
 
+.maps {
+  height: 80vh;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}

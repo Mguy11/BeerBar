@@ -18,10 +18,10 @@ export default class MenuItemsTabs extends Component{
                 className="menu-tabs"
                 defaultActiveKey="drinks"
             >
+                
                 <Tab eventKey="drinks" title="Drinks">
                     
                     <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
-                        <h3>Beers</h3>
                         <ListGroup.Item>Heineken</ListGroup.Item>
                         <ListGroup.Item>Jupiler</ListGroup.Item>
                         <ListGroup.Item>Amstel</ListGroup.Item>
@@ -33,6 +33,7 @@ export default class MenuItemsTabs extends Component{
                         <ListGroup.Item>Palm</ListGroup.Item>
                     </ListGroup>
                    
+                  
                     <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
                         <h3>Alcohol free Beers (0%)</h3>
                         <ListGroup.Item>Budels Malt</ListGroup.Item>
@@ -40,7 +41,7 @@ export default class MenuItemsTabs extends Component{
                         <ListGroup.Item>Playground</ListGroup.Item>
                     </ListGroup>
                 
-                    
+                   
                     <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
                         <h3>Wines</h3>
                         <ListGroup.Item>Cras justo odio</ListGroup.Item>
@@ -50,6 +51,7 @@ export default class MenuItemsTabs extends Component{
                         <ListGroup.Item>Morbi leo risus</ListGroup.Item>
                         <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
                     </ListGroup>
+                   
 
                     <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
                         <h3>Soda's</h3>

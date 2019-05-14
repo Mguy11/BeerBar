@@ -8,6 +8,8 @@ import Menu from './components/Menu'
 import Maps from './components/Maps'
 import Contact from './components/Contact'
 import FooterBlock from './components/Footer';
+import ControlledCarousel from './components/Carousel';
+
 
 class App extends Component {
   
@@ -17,6 +19,7 @@ class App extends Component {
         <NavBar />
         <Header />
         <About />
+        <ControlledCarousel />
         <Menu />
         <Maps />
         <Contact /> 

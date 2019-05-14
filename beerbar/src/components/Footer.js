@@ -5,13 +5,13 @@ export default class FooterBlock extends Component{
     render() {
         return(
             <div>
-                <Footer 
-                    copyrightIcon="true" 
-                    copyrightText="true" 
-                    text={"All rights reserved."} 
-                    copyrightTextStyle={{alignSelf:"center"}} 
-                    bgColor={"#168B81S"} 
-                />
+               <Footer
+                bgColor={"#008B81"}
+                copyrightTextStyle={{alignSelf:"center"}}
+                copyrightIcon="true"
+                copyrightText="true"
+                text={"All rights reserved."}
+               />
             </div>
         );
     }

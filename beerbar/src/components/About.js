@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ControlledCarousel from './Carousel'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -8,12 +7,11 @@ import Col from 'react-bootstrap/Col'
 export default class NavBar extends Component {
 
     render() {
-        return (
-            <div className="about">
-                <h2>About us</h2>
-                <Container>
-                    <Row>
-                    <Col md={{ span: 6, offset: 3 }}>                  
+        return (   
+                <Container style={{ maxWidth: '100%', paddingBottom: '2em', paddingTop: '2em' }}>
+                    <Row >
+                    <Col xs={6} className="about">
+                    <h2>About us</h2>                  
                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                           when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -24,8 +22,6 @@ export default class NavBar extends Component {
                     </Col>
                     </Row>
                 </Container>
-              <ControlledCarousel />
-            </div>
         );
     }
 }
