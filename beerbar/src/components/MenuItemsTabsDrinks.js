@@ -3,25 +3,26 @@ import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import ListGroup from 'react-bootstrap/ListGroup'
 
-export default class MenuItemsTabs extends Component{
+export default class MenuItemsTabsDrinks extends Component {
 
     constructor(props, context) {
         super(props, context);
         this.state = {
-          key: 'home',
+            key: 'home',
         };
-      }
-     
+    }
+
     render() {
-        return(
+        return (
             <Tabs
                 className="menu-tabs"
-                defaultActiveKey="drinks"
+                defaultActiveKey="beers"
             >
-                
-                <Tab eventKey="drinks" title="Drinks">
-                    
-                    <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
+
+                <Tab eventKey="beers" title="Beers">
+
+                    <ListGroup style={{ paddingTop: '1em', paddingBottom: '1em' }}>
+                        <h3>Beers</h3>
                         <ListGroup.Item>Heineken</ListGroup.Item>
                         <ListGroup.Item>Jupiler</ListGroup.Item>
                         <ListGroup.Item>Amstel</ListGroup.Item>
@@ -32,17 +33,20 @@ export default class MenuItemsTabs extends Component{
                         <ListGroup.Item>Brand</ListGroup.Item>
                         <ListGroup.Item>Palm</ListGroup.Item>
                     </ListGroup>
-                   
-                  
-                    <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
+                </Tab>
+
+                <Tab eventKey="alcoholfreebeers" title="Alcohol free Beers (0%)">
+
+                    <ListGroup style={{ paddingTop: '1em', paddingBottom: '1em' }}>
                         <h3>Alcohol free Beers (0%)</h3>
                         <ListGroup.Item>Budels Malt</ListGroup.Item>
                         <ListGroup.Item>Hoppy Lager</ListGroup.Item>
                         <ListGroup.Item>Playground</ListGroup.Item>
                     </ListGroup>
-                
-                   
-                    <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
+                </Tab>
+
+                <Tab eventKey="wines" title="Wines">
+                    <ListGroup style={{ paddingTop: '1em', paddingBottom: '1em' }}>
                         <h3>Wines</h3>
                         <ListGroup.Item>Cras justo odio</ListGroup.Item>
                         <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
@@ -51,9 +55,11 @@ export default class MenuItemsTabs extends Component{
                         <ListGroup.Item>Morbi leo risus</ListGroup.Item>
                         <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
                     </ListGroup>
-                   
+                </Tab>
 
-                    <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
+                <Tab eventKey="sodas" title="Soda's">
+
+                    <ListGroup style={{ paddingTop: '1em', paddingBottom: '1em' }}>
                         <h3>Soda's</h3>
                         <ListGroup.Item>Cola</ListGroup.Item>
                         <ListGroup.Item>Cola Light</ListGroup.Item>
@@ -64,41 +70,9 @@ export default class MenuItemsTabs extends Component{
                         <ListGroup.Item>Chaudfontaine Still</ListGroup.Item>
                     </ListGroup>
                 </Tab>
-                <Tab eventKey="food" title="Food">
-                    
-                    <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
-                        <h3>Lunch</h3>
-                        <ListGroup.Item>Old Cheese Sandwich</ListGroup.Item>
-                        <ListGroup.Item>Clubhouse</ListGroup.Item>
-                        <ListGroup.Item>BLT</ListGroup.Item>
-                        <ListGroup.Item>Tuna Time</ListGroup.Item>
-                    </ListGroup>
-                    
-                    <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
-                        <h3>Burgers</h3>
-                        <ListGroup.Item>The Braised Bull Burger </ListGroup.Item>
-                        <ListGroup.Item>Spicy Kicker</ListGroup.Item>
-                        <ListGroup.Item>The Longhorn</ListGroup.Item>
-                        <ListGroup.Item>Master Beef</ListGroup.Item>
-                    </ListGroup>
-                    
-                    <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
-                        <h3>Snacks</h3>
-                        <ListGroup.Item>Nachos</ListGroup.Item>
-                        <ListGroup.Item>Quesadillas</ListGroup.Item>
-                        <ListGroup.Item>Shrimp Tempura</ListGroup.Item>
-                        <ListGroup.Item>FRESHAVACADO</ListGroup.Item>
-                    </ListGroup>
-                    
-                    <ListGroup style={{paddingTop: '1em', paddingBottom: '1em'}}>
-                        <h3>Side dishes</h3>
-                        <ListGroup.Item>Fries</ListGroup.Item>
-                        <ListGroup.Item>Salad</ListGroup.Item>
-                    </ListGroup>
-                </Tab>
             </Tabs>
         );
     }
-    
+
 }
 

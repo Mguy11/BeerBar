@@ -34,3 +34,33 @@
   padding-left: 0px;
   padding-right: 0px;
 }
+
+.navbar {
+  position: fixed;
+  z-index: 2;
+  background: none !important;
+}
+
+.navbar ul li {
+  padding-left: 2em;
+  cursor: pointer;
+  font-size: 13pt;
+}
+
+a.nav-link.active {
+  background: #168B81;
+}
+
+.navbar ul li:nth-child(first) {
+  padding-left: 0;
+}
+
+
+.centerText {
+  margin: 0 auto;
+}
+
+.middle {
+  width: 100%;
+  padding-top: 2em;
+}

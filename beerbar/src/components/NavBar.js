@@ -1,22 +1,83 @@
 import React, { Component } from 'react'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 export default class NavBar extends Component {
 
+    scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
+
     render() {
         return (
-            <Navbar bg="light" variant="light" sticky="top">
-                <Navbar.Brand href="#home">BeerBar</Navbar.Brand>
-                <Nav className="mr-auto">
-                <Nav.Link href="#About">About</Nav.Link>
-                <Nav.Link href="#Menu">Menu</Nav.Link>
-                <Nav.Link href="#Maps">Maps</Nav.Link>
-                <Nav.Link href="#Contact">Contact</Nav.Link>
-                </Nav>
-            </Navbar>
+            <nav className={this.props.getClass} ref="navbar">
+                <ul className="navbar-nav centerText">
+                    <li className="nav-item">
+                        <Link
+                            className="nav-link"
+                            to="About"
+                            spy={true}
+                            smooth={true}
+                            cursor="pointer"
+                            offset={0}
+                            duration={500}
+                        >
+                            About
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            className="nav-link"
+                            to="Photos"
+                            spy={true}
+                            smooth={true}
+                            cursor="pointer"
+                            offset={0}
+                            duration={500}
+                        >
+                            Photos
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            className="nav-link"
+                            to="Menu"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                            Menu
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            className="nav-link"
+                            to="Maps"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                            Maps
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            className="nav-link"
+                            to="Contact"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+
         );
     }
 }
