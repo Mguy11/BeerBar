@@ -12,10 +12,10 @@ export default class NavBar extends Component {
     render() {
         return (
             <nav className={this.props.getClass} ref="navbar">
-                <ul className="navbar-nav centerText">
+                <ul className="navbar-nav">
                     <li className="nav-item">
                         <Link
-                            className="nav-link"
+                            id="about"
                             to="About"
                             spy={true}
                             smooth={true}
@@ -28,7 +28,7 @@ export default class NavBar extends Component {
                     </li>
                     <li className="nav-item">
                         <Link
-                            className="nav-link"
+                            id="photos"
                             to="Photos"
                             spy={true}
                             smooth={true}
@@ -41,7 +41,7 @@ export default class NavBar extends Component {
                     </li>
                     <li className="nav-item">
                         <Link
-                            className="nav-link"
+                            id="menu"
                             to="Menu"
                             spy={true}
                             smooth={true}
@@ -53,7 +53,7 @@ export default class NavBar extends Component {
                     </li>
                     <li className="nav-item">
                         <Link
-                            className="nav-link"
+                            id="maps"
                             to="Maps"
                             spy={true}
                             smooth={true}
@@ -65,7 +65,7 @@ export default class NavBar extends Component {
                     </li>
                     <li className="nav-item">
                         <Link
-                            className="nav-link"
+                            id="contact"
                             to="Contact"
                             spy={true}
                             smooth={true}

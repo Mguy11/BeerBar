@@ -4,6 +4,7 @@ import Marker from 'pigeon-marker'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container';
+import Contact from './Contact'
 
 export default class Maps extends Component {
     render() {
@@ -14,9 +15,7 @@ export default class Maps extends Component {
                     <h1 style={{ textAlign: 'center', fontSize: '4em' }}>Where to find us?</h1>
                     <Row>
                         <Col xs={6} className="maps">
-
-
-
+                            <Contact />
                         </Col>
 
                         <Col xs={6} className="maps">

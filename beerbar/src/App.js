@@ -7,7 +7,6 @@ import Header from './components/Header'
 import About from './components/About'
 import Menu from './components/Menu'
 import Maps from './components/Maps'
-import Contact from './components/Contact'
 import FooterBlock from './components/Footer';
 import ControlledCarousel from './components/Carousel';
 
@@ -25,13 +24,13 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar getClass={this.state.class} />
+        
         <Header />
+        <NavBar getClass={this.state.class} />
         <About getRef={this.getRef} />
         <ControlledCarousel getRef={this.getRef} />
         <Menu getRef={this.getRef} />
         <Maps getRef={this.getRef} />
-        <Contact getRef={this.getRef} />
         <FooterBlock />
       </div>
     );

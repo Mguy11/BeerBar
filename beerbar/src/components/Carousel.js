@@ -34,7 +34,6 @@ class ControlledCarousel extends React.Component {
           activeIndex={index}
           direction={direction}
           onSelect={this.handleSelect}
-          className="image-carousel"
         >
           <Carousel.Item>
             <img

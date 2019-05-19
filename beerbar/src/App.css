@@ -35,32 +35,51 @@
   padding-right: 0px;
 }
 
-.navbar {
+.navbar a {
   position: fixed;
+  left:-85px;
+  transition: 0.4s;
+  padding: 15px;
+  width: 110px;
+  font-size: 20px;
   z-index: 2;
-  background: none !important;
-}
-
-.navbar ul li {
-  padding-left: 2em;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid white;
+  text-decoration: none;
   cursor: pointer;
-  font-size: 13pt;
+ 
 }
 
-a.nav-link.active {
-  background: #168B81;
+.navbar a:hover {
+  left:0;
 }
 
-.navbar ul li:nth-child(first) {
-  padding-left: 0;
+#about {
+  top: 30%;
+  color: white;
+  background-color: #168B81;
 }
 
-
-.centerText {
-  margin: 0 auto;
+#photos {
+  top: 37%;
+  color: white;
+  background-color: #168B81;
 }
 
-.middle {
-  width: 100%;
-  padding-top: 2em;
+#menu {
+  top: 44%;
+  color: white;
+  background-color: #168B81;
+}
+
+#maps {
+  top: 51%;
+  color: white;
+  background-color: #168B81;
+}
+
+#contact {
+  top: 58%;
+  color: white;
+  background-color: #168B81;
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import BarInside from '../images/Bar_Inside.jpg'
 
 
 export default class NavBar extends Component {
@@ -20,7 +21,7 @@ export default class NavBar extends Component {
         return (
 
             <section id="About" ref={element => this.sectionRef = element}>
-                <Container style={{ maxWidth: '100%', paddingBottom: '2em', paddingTop: '2em' }}>
+                <Container style={{ maxWidth: '100%', padding: '4em' }}>
                     <Row >
                         <Col xs={6} className="about">
                             <h2>About us</h2>
@@ -30,6 +31,15 @@ export default class NavBar extends Component {
                                   It has survived not only five centuries, but also the leap into electronic typesetting,
                                   remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
                             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                        </Col>
+                        <Col xs={6} className="maps">
+                            <img
+                                src={BarInside}
+                                alt="Bar_Inside"
+                                style={{width: '100%'}}
+                            />
+
 
                         </Col>
                     </Row>

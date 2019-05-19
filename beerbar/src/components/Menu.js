@@ -11,7 +11,7 @@ export default class NavBar extends Component {
     render() {
         return (
             <section id="Menu" ref={element => this.sectionRef = element}>
-                <Container style={{ maxWidth: '100%', padding: '2em' }}>
+                <Container style={{ maxWidth: '100%'}}>
 
                     <h1 style={{ textAlign: 'center', fontSize: '4em' }}>Menu</h1>
 
