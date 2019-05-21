@@ -15,9 +15,28 @@ export default class Maps extends Component {
                     <h1 style={{ textAlign: 'center', fontSize: '4em' }}>Where to find us?</h1>
                     <Row>
                         <Col xs={6} className="maps">
-                            <Contact />
-                        </Col>
+                            <div style={{marginLeft: '10%', marginTop: '10%'}}>
+                            <Row>
+                                <Col xs={6} className="contact-info">
+                                    
+                                    <ul>
+                                    <h3 style={{textAlign: 'center'}}>Address</h3>
+                                        <li>Blaak 142</li>
+                                        <li>3223 FS</li>
+                                        <li>Rotterdam</li>
+                                        <li>010-123 4567</li>
+                                    </ul>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Contact />
+                            </Row>
 
+                            </div>
+                            
+
+
+                        </Col>
                         <Col xs={6} className="maps">
 
                             <Map

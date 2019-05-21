@@ -6,7 +6,7 @@ export default class FooterBlock extends Component{
         return(
             <div>
                <Footer
-                bgColor={"#008B81"}
+                bgColor={"#168B81"}
                 copyrightTextStyle={{alignSelf:"center"}}
                 copyrightIcon="true"
                 copyrightText="true"

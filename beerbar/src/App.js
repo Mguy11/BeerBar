@@ -11,6 +11,7 @@ import FooterBlock from './components/Footer';
 import ControlledCarousel from './components/Carousel';
 
 
+
 export default class App extends Component {
   constructor(props) {
     super(props);

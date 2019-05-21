@@ -11,7 +11,7 @@ export default class Contact extends Component {
         return (
             <section id="Contact" ref={element => this.sectionRef = element}>
                 <Form>
-                    <h1 style={{ textAlign: 'center', fontSize: '4em' }}>Contact</h1>
+                    <h3 style={{ textAlign: 'center' }}>Contact</h3>
                     <Row>
                         <Col md={{ span: 6, offset: 3 }}>
                             <Form.Control placeholder="First name" />
